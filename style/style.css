@@ -1,0 +1,368 @@
+*{
+  font-family: 'Mulish', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+
+  /* colors */
+
+--primary-color:#131318;
+--paragraph-sec-color:#5A5A5D;
+--secondary-color:#FF5400;
+--white-color:#ffffff;
+--accent-bg-1:rgba(251, 181, 99, 0.05);
+--accent-border-1:rgba(251, 181, 99, 0.20);
+--accent-bg-2:rgba(41, 206, 246, 0.05);
+--accent-border-2:rgba(41, 206, 246, 0.20);
+--accent-bg-3:rgba(233, 68, 68, 0.05);
+--accent-border-3:rgba(233, 68, 68, 0.20);
+
+ 
+/* font-size */
+
+
+
+--large-heading:4rem;
+--section-heading:2.5rem;
+--element-heading-1:1.75rem;
+--element-heading-2:1.5rem;
+--paragraph-text-size:1rem;
+}
+
+p{
+  font-size: var(--paragraph-text-size);
+  line-height: 1.6;
+}
+
+.primaty-btn{
+  font-size: var(--paragraph-text-size);
+  font-weight: 600;
+  padding: 16px 34px;
+  border-radius: 8px;
+  background: var(--secondary-color);
+  color: var(--white-color);
+  border: none;
+}
+.primaty-btn:hover{
+ background: var(--primary-color);
+ color: var(--white-color);
+ cursor: pointer;
+}
+
+.site_main{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* header CSS */
+
+.nav_menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.logo_img_text{
+  display: flex;
+  align-items: center;
+}
+.logo_img_text img{
+  margin-right: var(--paragraph-text-size);
+}
+.logo_title{
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+.logo_title span{
+  color: var(--secondary-color);
+}
+.nav_menu_links ul{
+  display: flex;
+  list-style: none;
+}
+
+.nav_menu_links ul li{
+
+  margin-right: 44px;
+
+}
+.nav_menu_links li a{
+  text-decoration: none;
+  color: var(--primary-color);
+  text-transform: capitalize;
+
+}
+.nav_menu_links li a:hover{
+  color: var(--secondary-color);
+  transition: all .3s ease-in;
+
+}
+.nav_menu_links .active{
+  color: var(--secondary-color);
+  
+
+}
+
+.mobile_menu_icon{
+  display: none;
+}
+  
+/* Hero-CSS */
+
+.hero_banner_main{
+  background-color: #13131880;
+  background-blend-mode: multiply;
+  background-image: url(/hero_travel_landing/assets/images/hero_image_d.png);
+  background-repeat: no-repeat;
+  /* object-fit: cover; */
+  min-height: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  border-radius: 16px;
+}
+
+.hero_title{
+  font-size: var(--large-heading);
+  font-weight: 800;
+  color: var(--white-color);
+  margin-bottom: 1.5rem;
+}
+.hero_text{
+  color: var(--white-color);
+  font-size: var(--paragraph-text-size);
+  width: 50%;
+}
+
+.booking_form{
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.30);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+input{
+  font-size: var(--paragraph-text-size);
+  color: var(--paragraph-sec-color);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 40px;
+  padding-left: 16px;
+  border-radius: 8px;
+  border: none;
+  margin-right: 10px;
+}
+select{
+  font-size: var(--paragraph-text-size);
+  color: var(--paragraph-sec-color);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 40px;
+  padding-left: 16px;
+  border-radius: 8px;
+  border: none;
+  margin-right: 10px;
+}
+.find_now{
+  font-size: var(--paragraph-text-size);
+  padding: 16px 34px;
+  border-radius: 8px;
+  background: var(--secondary-color);
+  color: var(--white-color);
+  border: none;
+}
+.find_now:hover{
+ background: var(--primary-color);
+ color: var(--white-color);
+ cursor: pointer;
+}
+
+.find_now i{
+  margin-right: 8px;
+}
+
+.popular_tour_container{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 100px;
+}
+
+.section_heading{
+  font-size: var(--section-heading);
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 24px;
+}
+.popular_left p{
+  margin-bottom: 24px;
+}
+.popular_left li{
+  margin-bottom: 16px;
+}
+.popular_left ul{
+  margin-left: 24px;
+}
+
+.destination_container{
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+
+
+.destination_container, .dealsanddiscount, .why_choose_us h2{
+  text-align: center;
+}
+.destination_container p{
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 50px;
+}
+.two_image{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.two_image, .last{
+  margin-top: 25px;
+}
+.text_center{
+  position: relative;
+  }
+  
+  .text_center h3 {
+    font-size: var(--element-heading-2);
+    color: var(--white-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+
+  .three_image{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+  }
+
+  section{
+    margin-bottom: 100px;
+  }
+
+
+  .why_choose_us >p{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+
+
+ .card_container{
+  display: flex;
+  gap: 24px;
+  margin-top: 25px;
+ }
+
+ .card_container.two{
+  display: flex;
+  justify-content: center;
+ }
+
+ .whychoose_card_one{
+  background-color: var(--accent-bg-1);
+  border: 2px solid var(--accent-border-1);
+  border-radius: 10px;
+  padding: 25px;
+
+ }
+
+ .whychoose_card_two{
+  background-color: var(--accent-bg-2);
+  border: 2px solid var(--accent-border-2);
+  border-radius: 10px;
+  padding: 25px;
+
+ }
+ .whychoose_card_three{
+  background-color: var(--accent-bg-3);
+  border: 2px solid var(--accent-border-3);
+  border-radius: 10px;
+  padding: 25px;
+  width: 45%;
+
+ }
+
+ .card_container h3{
+  font-size: var(--element-heading-2);
+  font-weight: 800;
+ }
+
+ .card_container h3{
+  margin-bottom: var(--paragraph-text-size);
+ }
+ .card_container       img{
+  margin-bottom: var(--paragraph-text-size);
+ }
+
+ .right_details{ 
+  text-align: left;
+  width: 50%;
+  padding: 50px;
+  background: var(--white-color);
+  border: 2px solid var(--accent-border-1);
+  border-radius: 10px;
+  margin: 20px;
+ }
+
+ .deal_container{
+  background-image: url(/hero_travel_landing/assets/images/d1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+ }
+
+ .deal_container ul li{
+  list-style: none;
+  display: inline;
+  margin-right: 24px;
+ }
+ .deal_container h3{
+  font-size: var(--element-heading-2);
+  font-weight: 800;
+
+ }
+
+ .card_details p, ul, .price, h3{
+  margin-bottom: 16px;
+ }
+
+ .deal_container ul li i{
+  color: var(--secondary-color);
+  margin-right: 10px;
+ }
+.perfect_place{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.pplace_left p{
+  margin-bottom: 24px;
+}
+.pplace_left li{
+  margin-bottom: 16px;
+}
+.pplace_left ul{
+  margin-left: 24px;
+}
